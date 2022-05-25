@@ -10,8 +10,8 @@ import javax.swing.JButton;
 import javax.swing.border.LineBorder;
 
 import java.awt.*;
-import com.ibm.icu.text.SimpleDateFormat;
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 import Controller.MySQLConnection;
 import Controller.ReaderManageMethod;
@@ -25,6 +25,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.ParseException;
+
+/**
+ * 读者信息面板
+ */
 public class ReaderInfo extends JPanel {
 	/**
 	 * 

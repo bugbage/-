@@ -3,7 +3,6 @@ package BookManage;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.ibm.icu.text.SimpleDateFormat;
 
 import Controller.BookManageMethod;
 import model.book;
@@ -23,6 +22,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ImageIcon;
 import java.awt.Toolkit;
+import java.text.SimpleDateFormat;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextArea;
 
@@ -423,7 +423,7 @@ public class BookManage extends JPanel {
 		txtName.setText(model.getName());
 		txtAuthor.setText(model.getAuthor());
 		txtPress.setText(model.getPress());
-		   SimpleDateFormat formatter = new SimpleDateFormat( "yyyy-MM-dd"); 
+		   SimpleDateFormat formatter = new SimpleDateFormat( "yyyy-MM-dd");
 			  String s=formatter.format(model.getDatePress());
 		txtDatePress.setText(s);
 		txtISBN.setText(model.getISBN());

@@ -105,5 +105,5 @@ public class LoginInterface extends JFrame {
 	         super.paintComponents(g);
 			g.drawImage(img,0,0,450, 315,this);
 	  }
-	 } 
+	 }
 }
